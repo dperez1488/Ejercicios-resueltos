@@ -215,42 +215,42 @@ controlParental();
 
 // Ejercicio 8-----------control parental 2 , aquí pediremos que se cumplan dos condiciones .
 
-// function controlParental2(){
+function controlParental2(){
 
-//                         //Creamos variables let y const para respuesta ya que no va a variar de valor
+                        //Creamos variables let y const para respuesta ya que no va a variar de valor
 
-//     const nombreCorrecto='Daniel';
-//     const apellidoCorrecto='Perez';
-//     let nombreUsuario;
-//     let apellidoUsuario;
+    const nombreCorrecto='Daniel';
+    const apellidoCorrecto='Perez';
+    let nombreUsuario;
+    let apellidoUsuario;
 
-//                         //While con condición booleana .
+                        //While con condición booleana .
 
-//     while(true){
-//         nombreUsuario=prompt("Dime tú nombre ");   //Guardar Respuesta de usuario
+    while(true){
+        nombreUsuario=prompt("Dime tú nombre ");   //Guardar Respuesta de usuario
 
 
-//         if(nombreUsuario!==nombreCorrecto ){     //Para comprobar primera condición
-//             alert('ERROR!. El nombre no es correcto, siga intentandolo');
-//             continue;       //Cuando el valor es true continua a segunda condición
-//         }
+        if(nombreUsuario!==nombreCorrecto ){     //Para comprobar primera condición
+            alert('ERROR!. El nombre no es correcto, siga intentandolo');
+            continue;       //Cuando el valor es true continua a segunda condición
+        }
 
-//                             //Avanzamos a comprobar segunda condición repitiendo los mismos pasos
+                            //Avanzamos a comprobar segunda condición repitiendo los mismos pasos
 
-//         apellidoUsuario=prompt('Digame sú apellido');
-//         if(apellidoUsuario!==apellidoCorrecto){
-//             alert('ERROR!. El apellido no es correcto, saga intentandolo');
-//                     continue;
-//                      }
-//                      break;     //Si ambos son correctos
-//                     }
-//                     alert('nombre y apellidos correctos');  
-//                     window.location.href="https://www.Google.com"; //Dirige donde indiquemos
-//         }
+        apellidoUsuario=prompt('Digame sú apellido');
+        if(apellidoUsuario!==apellidoCorrecto){
+            alert('ERROR!. El apellido no es correcto, saga intentandolo');
+                    continue;
+                     }
+                     break;     //Si ambos son correctos
+                    }
+                    alert('nombre y apellidos correctos');  
+                    window.location.href="https://www.Google.com"; //Dirige donde indiquemos
+        }
         
     
 
-// controlParental2();
+controlParental2();
 
 
 
