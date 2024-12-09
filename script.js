@@ -215,39 +215,85 @@ controlParental();
 
 // Ejercicio 8-----------control parental 2 , aquí pediremos que se cumplan dos condiciones .
 
-function controlParental2(){
+// function controlParental2(){
 
-                        //Creamos variables let y const para respuesta ya que no va a variar de valor
+//                         //Creamos variables let y const para respuesta ya que no va a variar de valor
 
-    const nombreCorrecto='Daniel';
-    const apellidoCorrecto='Perez';
-    let nombreUsuario;
-    let apellidoUsuario;
+//     const nombreCorrecto='Daniel';
+//     const apellidoCorrecto='Perez';
+//     let nombreUsuario;
+//     let apellidoUsuario;
 
-                        //While con condición booleana .
+//                         //While con condición booleana .
 
-    while(true){
-        nombreUsuario=prompt("Dime tú nombre ");   //Guardar Respuesta de usuario
+//     while(true){
+//         nombreUsuario=prompt("Dime tú nombre ");   //Guardar Respuesta de usuario
 
 
-        if(nombreUsuario!==nombreCorrecto ){     //Para comprobar primera condición
-            alert('ERROR!. El nombre no es correcto, siga intentandolo');
-            continue;       //Cuando el valor es true continua a segunda condición
-        }
+//         if(nombreUsuario!==nombreCorrecto ){     //Para comprobar primera condición
+//             alert('ERROR!. El nombre no es correcto, siga intentandolo');
+//             continue;       //Cuando el valor es true continua a segunda condición
+//         }
 
-                            //Avanzamos a comprobar segunda condición repitiendo los mismos pasos
+//                             //Avanzamos a comprobar segunda condición repitiendo los mismos pasos
 
-        apellidoUsuario=prompt('Digame sú apellido');
-        if(apellidoUsuario!==apellidoCorrecto){
-            alert('ERROR!. El apellido no es correcto, saga intentandolo');
-                    continue;
-                     }
-                     break;     //Si ambos son correctos
-                    }
-                    alert('nombre y apellidos correctos');  
-                    window.location.href="https://www.Google.com"; //Dirige donde indiquemos
-        }
+//         apellidoUsuario=prompt('Digame sú apellido');
+//         if(apellidoUsuario!==apellidoCorrecto){
+//             alert('ERROR!. El apellido no es correcto, saga intentandolo');
+//                     continue;
+//                      }
+//                      break;     //Si ambos son correctos
+//                     }
+//                     alert('nombre y apellidos correctos');  
+//                     window.location.href="https://www.Google.com"; //Dirige donde indiquemos
+//         }
         
     
 
-controlParental2();
+// controlParental2();
+
+
+
+
+
+
+
+
+function comprobarEdad2() {
+    let edad = prompt("Por favor, introduce tu edad:"); 
+    if (isNaN(edad) || edad === 0) {           //isNaN = saber si es un numero
+        alert("Por favor, introduce un número válido mayor o igual a 0.");
+            return;
+    }
+        edad = parseInt(edad, 10); // Convierte la edad a entero
+        let mensaje;
+
+    // let edad = prompt("Por favor, introduce tu edad:");  //prompt=mensaje para pedir edad
+    
+    // Verifica que el valor introducido sea un número y no menor que 0
+   
+    
+    switch (true) {   
+               //isNaN = saber si es un numero
+        case (edad < 12):        
+        mensaje = "Eres un niño";
+        break;
+
+        case (edad >= 12 && edad < 26) :
+            mensaje = "Eres un joven";
+            break;
+
+            case (edad >= 26 && edad <= 60) :
+            mensaje = " Eres un adulto";
+            break;
+
+        case edad > 60 :
+            mensaje = "Eres un jubilado";
+            break;
+            default:
+                mensaje="Edad no valida"
+        }
+        alert("Categoría de edad: " + mensaje);
+}
+
+comprobarEdad2();
